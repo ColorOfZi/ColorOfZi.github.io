@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -88,11 +88,8 @@
     <main id="main-content" class="w-full h-screen flex flex-col justify-center items-center p-4 opacity-0 transition-opacity duration-1000">
         
         <div class="backdrop-blur-card rounded-2xl w-full max-w-sm mx-auto p-6 text-center shadow-2xl">
-                <img src="a1m4is.gif" ... > 
-                alt="Profile Picture" 
-                class="w-24 h-24 md:w-32 md:h-32 rounded-full mx-auto -mt-16 md:-mt-20 border-4 border-gray-800 shadow-lg object-cover"
-                onerror="this.onerror=null; this.src='https://placehold.co/128x128/333333/FFFFFF?text=Error';"
-            >
+            <!-- Profile Picture - Corrected Tag -->
+            <img src="a1m4is.gif" alt="Profile Picture" class="w-24 h-24 md:w-32 md:h-32 rounded-full mx-auto -mt-16 md:-mt-20 border-4 border-gray-800 shadow-lg object-cover" onerror="this.onerror=null; this.src='https://placehold.co/128x128/333333/FFFFFF?text=Error';">
 
             <h1 class="text-2xl md:text-3xl font-bold mt-4">Zi'Anna</h1>
             
@@ -120,7 +117,8 @@
             <div class="flex items-center">
                 <button id="play-pause-btn" class="text-white text-2xl w-12 h-12 flex-shrink-0"><i class="fas fa-play"></i></button>
                 <div class="flex-grow mx-3 overflow-hidden">
-                    <audio id="music-player" src="Wolfacejoeyy - cake (Official Video).mp3"></audio
+                    <!-- Audio source pointing to local file -->
+                    <audio id="music-player" src="Wolfacejoeyy - cake (Official Video).mp3"></audio>
                     <p class="font-semibold truncate">cake</p>
                     <p class="text-sm text-gray-400 truncate">Wolfacejoeyy</p>
                     <progress id="music-progress-bar" value="0" max="100" class="w-full h-1 rounded-full mt-2 appearance-none"></progress>
@@ -318,3 +316,4 @@
     </script>
 </body>
 </html>
+
